@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EO.WebBrowser" Version="23.3.31" />
+  </ItemGroup>
+
 </Project>

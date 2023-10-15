@@ -1,4 +1,5 @@
-﻿using static System.Net.Mime.MediaTypeNames;
+﻿using MouseEventsExample;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace NumberGuessingGame
 {
@@ -90,5 +91,6 @@ namespace NumberGuessingGame
 
     public class Form
     {
+        public Action<object, MouseEventArgs> MouseDown { get => mouseDown; private set => mouseDown = value; }
     }
 }
