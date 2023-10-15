@@ -29,15 +29,18 @@ namespace ResumeMessageBox
             int averageCharactersPerMessageBox = totalCharacters / messageBoxCount;
 
             for (int i = 0; i < messageBoxCount - 1; i++)
-            {
-                object value = MessageBox.Show(
-                    resume,
-                    "Резюме",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            }
+                NewMethod(resume);
 
             MessageBox.Show(resume, "Резюме - Середній символів: " + averageCharactersPerMessageBox, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void NewMethod(string resume)
+        {
+            object value = MessageBox.Show(
+                resume,
+                "Резюме",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         [STAThread]
