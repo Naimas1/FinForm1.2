@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FinForm1._2
+﻿namespace ResumeMessageBox
 {
-    internal class form1
+    public class Form
     {
     }
 }
